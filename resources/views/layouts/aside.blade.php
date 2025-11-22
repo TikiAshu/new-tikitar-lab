@@ -16,14 +16,86 @@
             <!--begin::Menu-->
             <div class="menu menu-column menu-title-gray-700 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold" id="#kt_aside_menu" data-kt-menu="true">
                 <div class="menu-item py-2">
-                    <a class="menu-link active menu-center" href="../../demo6/dist/index.html" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                    <a class="menu-link active menu-center" href="{{ route('dashboard') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
                         <span class="menu-icon me-0">
                             <i class="bi bi-house fs-2"></i>
                         </span>
                         <span class="menu-title">Home</span>
                     </a>
                 </div>
-                <div data-kt-menu-trigger="click" data-kt-menu-placement="right-start" class="menu-item py-2">
+                <div class="menu-item py-2">
+                    <a class="menu-link menu-center" href="{{ route('batch.index') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                        <span class="menu-icon me-0">
+                            <i class="bi bi-file-earmark-text fs-2"></i>
+                        </span>
+                        <span class="menu-title">Test Reports</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-content">
+                        <span class="menu-section fs-5 fw-bolder ps-1 py-1">Master</span>
+                    </div>
+                </div>
+                <div class="menu-item py-2">
+                    <a class="menu-link menu-center" href="{{ route('products.index') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                        <span class="menu-icon me-0">
+                            <i class="bi bi-box-seam fs-2"></i>
+                        </span>
+                        <span class="menu-title">Products</span>
+                    </a>
+                </div>
+                <div class="menu-item py-2">
+                    <a class="menu-link menu-center" href="{{ route('labs.index') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                        <span class="menu-icon me-0">
+                            <i class="bi bi-building fs-2"></i>
+                        </span>
+                        {{-- <span class="menu-title">Lab Locations</span> --}}
+                        <span class="menu-title">Lab</span>
+                    </a>
+                </div>
+                <div class="menu-item py-2">
+                    <a class="menu-link menu-center" href="{{ route('factories.index') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                        <span class="menu-icon me-0">
+                            <i class="bi bi-gear fs-2"></i>
+                        </span>
+                        {{-- <span class="menu-title">Factory Locations</span> --}}
+                        <span class="menu-title">Factory</span>
+                    </a>
+                </div>
+                <div class="menu-item py-2">
+                    <a class="menu-link menu-center" href="{{ route('specifications.index') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                        <span class="menu-icon me-0">
+                            <i class="bi bi-list-check fs-2"></i>
+                        </span>
+                        <span class="menu-title">Specifications</span>
+                    </a>
+                </div>
+                <div class="menu-item py-2">
+                    <a class="menu-link menu-center" href="{{ route('test-parameters.index') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                        <span class="menu-icon me-0">
+                            <i class="bi bi-clipboard-data fs-2"></i>
+                        </span>
+                        <span class="menu-title">Test Parameters</span>
+                    </a>
+                </div>
+                <div class="menu-item py-2">
+                    <a class="menu-link menu-center" href="{{ route('test-methods.index') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                        <span class="menu-icon me-0">
+                            <i class="bi bi-journal-text fs-2"></i>
+                        </span>
+                        <span class="menu-title">Test Methods</span>
+                    </a>
+                </div>
+                <div class="menu-item py-2">
+                    <a class="menu-link menu-center" href="{{ route('clients.index') }}" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                        <span class="menu-icon me-0">
+                            <i class="bi bi-people fs-2"></i>
+                        </span>
+                        <span class="menu-title">Clients</span>
+                    </a>
+                </div>
+                {{-- <div data-kt-menu-trigger="click" data-kt-menu-placement="right-start" class="menu-item py-2">
                     <span class="menu-link menu-center" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
                         <span class="menu-icon me-0">
                             <i class="bi bi-file-earmark-lock fs-2"></i>
@@ -150,7 +222,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <!--end::Menu-->
         </div>
